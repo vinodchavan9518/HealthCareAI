@@ -1,6 +1,8 @@
 # HealthCareAI
 
-## Project Description
+HealthCareAI is a smart healthcare management system developed using Java technologies.  
+This project helps hospitals and clinics manage patients, appointments, doctor information, and healthcare services efficiently.
+The system provides secure login authentication and user-friendly interfaces for managing healthcare operations.
 HealthCareAI is an AI-based healthcare management system developed using Java.
 
 ## Features
