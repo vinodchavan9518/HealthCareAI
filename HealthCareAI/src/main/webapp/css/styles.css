@@ -1,0 +1,416 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    color:#1e293b;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    background:#ffffff;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 12px rgba(0,0,0,0.06);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.brand{
+    font-size:28px;
+    font-weight:700;
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.brand span{
+    color:#0f172a;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    color:#2563eb;
+}
+
+.logout{
+    background:#ef4444;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:95%;
+    margin:30px auto;
+}
+
+/* ================= HERO ================= */
+
+.hero-dashboard{
+    width:100%;
+    padding:50px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#0ea5e9,#2563eb);
+    color:white;
+    margin-bottom:35px;
+    box-shadow:0 8px 30px rgba(37,99,235,0.3);
+}
+
+.hero-dashboard h1{
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero-dashboard p{
+    font-size:22px;
+    opacity:0.95;
+}
+
+/* ================= STATS ================= */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.stat-box{
+    background:white;
+    border-radius:25px;
+    padding:50px 20px;
+    text-align:center;
+    transition:0.3s;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+}
+
+.stat-box .icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.stat-box h3{
+    font-size:22px;
+    color:#1e293b;
+}
+
+/* ================= SECTION ================= */
+
+.section-title{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:30px;
+    color:#0f172a;
+}
+
+/* ================= CARDS ================= */
+
+.cards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    text-decoration:none;
+    color:#1e293b;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card .icon{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#64748b;
+    line-height:1.7;
+}
+
+/* ================= FORM ================= */
+
+.form-card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.form-card h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2563eb;
+    font-size:34px;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:16px;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
+    font-size:15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,0.2);
+}
+
+/* ================= BUTTON ================= */
+
+.btn-primary{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#0ea5e9,#2563eb);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+/* ================= TABLE ================= */
+
+.table-wrap{
+    background:white;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    overflow:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:16px;
+    text-align:left;
+}
+
+table td{
+    padding:16px;
+    border-bottom:1px solid #e2e8f0;
+}
+
+table tr:hover{
+    background:#f8fafc;
+}
+
+/* ================= BADGES ================= */
+
+.badge{
+    padding:8px 14px;
+    border-radius:30px;
+    color:white;
+    font-size:12px;
+    font-weight:600;
+}
+
+.badge-green{
+    background:#22c55e;
+}
+
+.badge-red{
+    background:#ef4444;
+}
+
+.badge-yellow{
+    background:#f59e0b;
+}
+
+.badge-blue{
+    background:#3b82f6;
+}
+
+/* ================= ALERT ================= */
+
+.alert{
+    padding:16px;
+    border-radius:12px;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.alert-success{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.alert-danger{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+/* ================= CHATBOT ================= */
+
+.chat-btn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:80px;
+    height:80px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0ea5e9,#2563eb);
+    color:white;
+    font-size:35px;
+    cursor:pointer;
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+.chat-box{
+    position:fixed;
+    right:25px;
+    bottom:120px;
+    width:360px;
+    height:500px;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    display:none;
+    flex-direction:column;
+}
+
+.chat-box.open{
+    display:flex;
+}
+
+.chat-header{
+    background:linear-gradient(135deg,#0ea5e9,#2563eb);
+    color:white;
+    padding:18px;
+    font-weight:600;
+}
+
+.chat-messages{
+    flex:1;
+    padding:18px;
+    overflow:auto;
+}
+
+.msg{
+    padding:12px 16px;
+    border-radius:14px;
+    margin-bottom:12px;
+    max-width:80%;
+}
+
+.msg-user{
+    background:#2563eb;
+    color:white;
+    margin-left:auto;
+}
+
+.msg-bot{
+    background:#f1f5f9;
+}
+
+.chat-input{
+    display:flex;
+    border-top:1px solid #e2e8f0;
+}
+
+.chat-input input{
+    flex:1;
+    border:none;
+    padding:15px;
+}
+
+.chat-input button{
+    width:70px;
+    border:none;
+    background:#2563eb;
+    color:white;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-dashboard h1{
+        font-size:34px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+}
+
